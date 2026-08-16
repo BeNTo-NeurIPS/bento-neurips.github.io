@@ -262,6 +262,9 @@
     .cfp-list li{position:relative; padding-left:28px; color:var(--text-soft); font-size:16.5px; line-height:1.5}
     .cfp-list li::before{content:""; position:absolute; left:4px; top:.62em; width:9px; height:9px; border-radius:2px; background:var(--accent); transform:rotate(45deg)}
     .cfp-list li b{color:var(--text); font-weight:600}
+    .cfp-list li a{color:var(--accent); font-weight:600; text-decoration:underline; text-underline-offset:2px; text-decoration-thickness:1px; text-decoration-color:rgba(91,83,255,.4); transition:text-decoration-color .18s ease}
+    .cfp-list li a:hover{text-decoration-color:var(--accent)}
+    .cfp-list li a .arr{font-size:.82em}
     .cfp-side{border:1px solid var(--line); border-radius:var(--r); background:#fff; padding:28px; position:sticky; top:88px}
     .stat-row{display:grid; grid-template-columns:1fr 1fr; gap:6px 20px}
     .stat{padding:16px 0; border-bottom:1px solid var(--line-soft)}
@@ -543,7 +546,8 @@
             <p>We invite submissions on any topic within the workshop's scope, across both tracks, from theory and algorithms to applications and systems. 
               All submissions are handled through OpenReview.</p>
             <ul class="cfp-list">
-              <li><b>Page limit.</b> Submissions may be either <b>4 or 8 pages</b>, excluding references and appendices.</li>
+              <li><b>Format.</b> Use the <a href="https://neurips.cc/Conferences/2026/CallForPapers" target="_blank" rel="noopener">NeurIPS 2026 LaTeX template <span class="arr" aria-hidden="true">↗</span></a> and anonymize author information.</li>
+              <li><b>Page limit.</b> Submissions may be either <b>4 or 8 pages</b> of main text. <b>References and appendices do not count toward the page limit.</b></li>
               <li><b>Mutual-review policy.</b> At least one qualified author per submission serves as a reviewer.</li>
               <li><b>Travel grants</b> for students and early-career researchers with accepted papers.</li>
             </ul>

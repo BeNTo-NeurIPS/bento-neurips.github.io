@@ -289,11 +289,14 @@
     .sched-row .time{font-family:var(--ff-mono); font-size:14px; color:var(--text-soft); letter-spacing:.01em; white-space:nowrap}
     .sched-row .what{font-size:18px; color:var(--text)}
     .sched-row.talk .what{font-weight:500}
+    .sched-row.talk{background:#fff}
+    .sched-row.talk .speaker-name{color:var(--accent)}
     .sched-row .tag{font-family:var(--ff-mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; padding:4px 10px; border-radius:999px; border:1px solid var(--line); color:var(--text-soft)}
     .sched-row.break{background:var(--paper-2)}
     .sched-row.break .what{color:var(--text-soft); font-style:italic; font-family:var(--ff-body)}
     .sched-row.break:hover{background:var(--paper-2)}
-    .sched-row.oral{align-items:start}
+    .sched-row.oral{align-items:start; background:#f5f4ff; box-shadow:inset 3px 0 0 var(--accent)}
+    .sched-row.oral:hover{background:#eeecff}
     .oral-papers{list-style:disc; margin:12px 0 0; padding-left:1.4em; font-size:16px; line-height:1.6; overflow-wrap:anywhere}
     .oral-papers li + li{margin-top:14px}
     .oral-title{font-weight:500}
@@ -595,11 +598,11 @@
         </div>
         <div class="sched" data-reveal style="margin-top:34px">
           <div class="sched-row headline"><span class="time">09:00–09:10</span><span class="what">Opening remarks</span><span class="tag">10 min</span></div>
-          <div class="sched-row talk"><span class="time">09:10–09:40</span><span class="what">Invited Talk: Stefano Ermon</span><span class="tag">30 min</span></div>
-          <div class="sched-row talk"><span class="time">09:40–10:10</span><span class="what">Invited Talk: Masatoshi Uehara</span><span class="tag">30 min</span></div>
+          <div class="sched-row talk"><span class="time">09:10–09:40</span><span class="what">Invited Talk: <span class="speaker-name">Stefano Ermon</span></span><span class="tag">30 min</span></div>
+          <div class="sched-row talk"><span class="time">09:40–10:10</span><span class="what">Invited Talk: <span class="speaker-name">Masatoshi Uehara</span></span><span class="tag">30 min</span></div>
           <div class="sched-row break"><span class="time">10:10–10:25</span><span class="what">Coffee break</span><span class="tag">15 min</span></div>
-          <div class="sched-row talk"><span class="time">10:25–10:55</span><span class="what">Invited Talk: Arash Vahdat</span><span class="tag">30 min</span></div>
-          <div class="sched-row talk"><span class="time">10:55–11:25</span><span class="what">Invited Talk: Guan-Horng Liu</span><span class="tag">30 min</span></div>
+          <div class="sched-row talk"><span class="time">10:25–10:55</span><span class="what">Invited Talk: <span class="speaker-name">Arash Vahdat</span></span><span class="tag">30 min</span></div>
+          <div class="sched-row talk"><span class="time">10:55–11:25</span><span class="what">Invited Talk: <span class="speaker-name">Guan-Horng Liu</span></span><span class="tag">30 min</span></div>
           <div class="sched-row oral">
             <span class="time">11:25–11:55</span>
             <div class="what">Oral Session 1: <span style="color:var(--text-soft)">3 papers × 10 min</span>
@@ -612,8 +615,8 @@
             <span class="tag">30 min</span>
           </div>
           <div class="sched-row break"><span class="time">11:55–14:00</span><span class="what">Lunch + Poster Session</span><span class="tag">125 min</span></div>
-          <div class="sched-row talk"><span class="time">14:00–14:30</span><span class="what">Invited Talk: Jiaxin Shi</span><span class="tag">30 min</span></div>
-          <div class="sched-row talk"><span class="time">14:30–15:00</span><span class="what">Invited Talk: Volodymyr Kuleshov</span><span class="tag">30 min</span></div>
+          <div class="sched-row talk"><span class="time">14:00–14:30</span><span class="what">Invited Talk: <span class="speaker-name">Jiaxin Shi</span></span><span class="tag">30 min</span></div>
+          <div class="sched-row talk"><span class="time">14:30–15:00</span><span class="what">Invited Talk: <span class="speaker-name">Volodymyr Kuleshov</span></span><span class="tag">30 min</span></div>
           <div class="sched-row oral">
             <span class="time">15:00–15:20</span>
             <div class="what">Oral Session 2: <span style="color:var(--text-soft)">2 papers × 10 min</span>

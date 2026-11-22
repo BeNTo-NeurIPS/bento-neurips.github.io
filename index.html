@@ -293,6 +293,11 @@
     .sched-row.break{background:var(--paper-2)}
     .sched-row.break .what{color:var(--text-soft); font-style:italic; font-family:var(--ff-body)}
     .sched-row.break:hover{background:var(--paper-2)}
+    .sched-row.oral{align-items:start}
+    .oral-papers{list-style:disc; margin:12px 0 0; padding-left:1.4em; font-size:16px; line-height:1.6; overflow-wrap:anywhere}
+    .oral-papers li + li{margin-top:14px}
+    .oral-title{font-weight:500}
+    .oral-authors{display:block; margin-top:4px; color:var(--text-soft); font-size:14px; line-height:1.6}
     .sched-row.oral .tag{color:var(--accent); border-color:rgba(91,83,255,.35)}
     .sched-row.headline .what{font-family:var(--ff-display); font-weight:600}
     .sched-legend{font-family:var(--ff-mono); font-size:12px; color:var(--text-soft); margin-top:18px; letter-spacing:.03em}
@@ -595,11 +600,30 @@
           <div class="sched-row break"><span class="time">10:10–10:25</span><span class="what">Coffee break</span><span class="tag">15 min</span></div>
           <div class="sched-row talk"><span class="time">10:25–10:55</span><span class="what">Invited Talk: Arash Vahdat</span><span class="tag">30 min</span></div>
           <div class="sched-row talk"><span class="time">10:55–11:25</span><span class="what">Invited Talk: Guan-Horng Liu</span><span class="tag">30 min</span></div>
-          <div class="sched-row oral"><span class="time">11:25–11:55</span><span class="what">Oral Session 1: <span style="color:var(--text-soft)">3 papers × 10 min</span></span><span class="tag">30 min</span></div>
+          <div class="sched-row oral">
+            <span class="time">11:25–11:55</span>
+            <div class="what">Oral Session 1: <span style="color:var(--text-soft)">3 papers × 10 min</span>
+              <ul class="oral-papers">
+                <li><span class="oral-title">Flow Map for Count Data</span><span class="oral-authors">Ganchao Wei</span></li>
+                <li><span class="oral-title">GRAS: Guided Reduced-Variance Proposals and Adaptive Selection for Training-Free Reward Alignment in Discrete Diffusion</span><span class="oral-authors">Kwanyoung Kim</span></li>
+                <li><span class="oral-title">Loopholing All the Way: Continuous Looping with Discrete Diffusion Models</span><span class="oral-authors">Adrien Deschenaux, Nadezhda Ilieva, Justin Deschenaux, Manuel Madeira, Dorina Thanou, Aurelien Lucchi, Antonio Orvieto, Caglar Gulcehre, Pascal Frossard</span></li>
+              </ul>
+            </div>
+            <span class="tag">30 min</span>
+          </div>
           <div class="sched-row break"><span class="time">11:55–14:00</span><span class="what">Lunch + Poster Session</span><span class="tag">125 min</span></div>
           <div class="sched-row talk"><span class="time">14:00–14:30</span><span class="what">Invited Talk: Jiaxin Shi</span><span class="tag">30 min</span></div>
           <div class="sched-row talk"><span class="time">14:30–15:00</span><span class="what">Invited Talk: Volodymyr Kuleshov</span><span class="tag">30 min</span></div>
-          <div class="sched-row oral"><span class="time">15:00–15:20</span><span class="what">Oral Session 2: <span style="color:var(--text-soft)">2 papers × 10 min</span></span><span class="tag">20 min</span></div>
+          <div class="sched-row oral">
+            <span class="time">15:00–15:20</span>
+            <div class="what">Oral Session 2: <span style="color:var(--text-soft)">2 papers × 10 min</span>
+              <ul class="oral-papers">
+                <li><span class="oral-title">Support Before Frequency in Discrete Diffusion</span><span class="oral-authors">Adrian Müller, Antoine Gonon, Zebang Shen, Ya-Ping Hsieh, Niao He</span></li>
+                <li><span class="oral-title">SOL: Measuring Gaps between Text Distributions by Double Sliced Wasserstein Metrics</span><span class="oral-authors">Gregor Kornhardt, Moritz Piening, Jannis Chemseddine, Gabriele Steidl</span></li>
+              </ul>
+            </div>
+            <span class="tag">20 min</span>
+          </div>
           <div class="sched-row break"><span class="time">15:20–15:35</span><span class="what">Coffee break</span><span class="tag">15 min</span></div>
           <div class="sched-row headline"><span class="time">15:35–16:30</span><span class="what">Panel Discussion</span><span class="tag">55 min</span></div>
           <div class="sched-row headline"><span class="time">16:30–16:50</span><span class="what">Awards / Closing Remarks</span><span class="tag">20 min</span></div>
